@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Space - Super Bowl</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Space</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../backend/logout.php">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="dashboard">
+                <h2>Dashboard</h2>
+                <canvas id="betChart"></canvas>
+            </section>
+            <section id="user-info">
+                <h2>Information</h2>
+                <!-- User information will be loaded here by JavaScript -->
+            </section>
+            <section id="bet-history">
+                <h2>Bet History</h2>
+                <!-- Bet history will be loaded here by JavaScript -->
+            </section>
+        </div>
+    </main>
+    <script src="../js/user-space.js"></script>
+</body>
+</html>

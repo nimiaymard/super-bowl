@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace administrateur - Super Bowl</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Espace Administrateur</h1>
+    </header>
+    <main>
+        <div id="admin-section">
+            <!-- Team and match management interface will be loaded here by JavaScript -->
+
+            <h2>Créer une équipe</h2>
+            <form id="create-team-form">
+                <label for="team-name">Nom de l'équipe :</label>
+                <input type="text" id="team-name" name="team_name" required>
+                <label for="country">Pays :</label>
+                <input type="text" id="country" name="country" required>
+                <button type="button" onclick="createTeam()">Créer l'équipe</button>
+            </form>
+            <h2>Créer un joueur</h2>
+            <form id="create-player-form">
+                <label for="team-id">ID de l'équipe :</label>
+                <input type="number" id="team-id" name="team_id" required>
+                <label for="player-name">Nom du joueur :</label>
+                <input type="text" id="player-name" name="player_name" required>
+                <label for="player-number">Numéro du joueur :</label>
+                <input type="number" id="player-number" name="player_number" required>
+                <button type="button" onclick="createPlayer()">Créer le joueur</button>
+            </form>
+            <h2>Planifier un match</h2>
+            <form id="create-match-form">
+                <label for="team1-id">ID de l'équipe 1 :</label>
+                <input type="number" id="team1-id" name="team1_id" required>
+                <label for="team2-id">ID de l'équipe 2 :</label>
+                <input type="number" id="team2-id" name="team2_id" required>
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Heure :</label>
+                <input type="time" id="time" name="time" required>
+                <label for="odds-team1">Cote équipe 1 :</label>
+                <input type="number" step="0.01" id="odds-team1" name="odds_team1" required>
+                <label for="odds-team2">Cote équipe 2 :</label>
+                <input type="number" step="0.01" id="odds-team2" name="odds_team2" required>
+                <button type="button" onclick="createMatch()">Planifier le match</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/admin-space.js"></script>
+</body>
+</html>
